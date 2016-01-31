@@ -1,65 +1,123 @@
 @charset "UTF-8";
 
-/* common ---------------------- */
-body{
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size:12px;
-	line-height:1.5;
-}
-a{
-	color:#0099cc;
-	text-decoration: underline;
-}
-a:hover{
-	color:#F60;
-	text-decoration: underline;
-}
+/* スマホサイト(768px　以下)のCSS */
 
-#wrapper{
-	width:950px;
-	margin: 40px auto 0;
+/* common ---------------------- */
+	body{
+		font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size:12px;
+		line-height:1.5;
+	}
+	a{
+		color:#0099cc;
+		text-decoration: underline;
+	}
+	a:hover{
+		color:#F60;
+		text-decoration: underline;
+	}
+
+	#wrapper{
+		width:100%;;
+		margin:20px 0;
+	}
+
+	.inner{
+		padding:10px 0;
+	}
+
+
+@media screen and (min-width:768px){
+
+/* PCサイト(768px　以上)のCSS */
+
+	#wrapper{
+		width:950px;
+		margin: 40px auto 0;
+	}
+
+	.inner{
+		padding: 0;
+	}
+
 }
 
 /* header ------------------------*/
-header{
-	width:950px;
-	height:80px;
-	position:relative;
-}
-header h1{
-	width:221px;
-	height:28px;
-	position:absolute;
-	left:0;
-	top:0;
-}
-header p{
-	width:350px;
-	height:28px;
-	position:absolute;
-	left:240px;
-	top:0;
-}
+	header{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	header h1{
+		width: 221px;
+		margin: 0 auto;
+	}
+	header p{
+		width: 100%;
+		text-align: center;
+	}
 
+@media screen and (min-width:768px){
+	header{
+		width:950px;
+		height:80px;
+		position:relative;
+	}
+	header h1{
+		width:221px;
+		height:28px;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	header p{
+		width:350px;
+		height:28px;
+		position:absolute;
+		left:240px;
+		top:0;
+	}
+}
 
 /* nav -------------------------*/
-nav ul li{
-	width:150px;
-	float:left;
-	border-bottom:1px #000 solid;
-	padding-bottom:5px;
-	margin-bottom:30px;
-	margin-right:10px;
-}
-nav ul li:last-child{
-	margin-right:0;
-}
-nav ul li a{
-	color:#000;
-	text-decoration:none;
-	width:150px;
-	display:block;
-	font-family:Arial, Helvetica, sans-serif;
+
+	nav ul{
+		width: 100%;
+		border-top: 1px #000 solid;
+	}
+	nav li{
+		width: 100%;
+		border-bottom: 1px #000 solid;
+	}
+	nav li a:link, nav li a:visited{
+		color: #000;
+		text-decoration: none;
+		width: 100%;
+		display: block;
+		padding: 15px 10px;
+		font-size: 16px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+
+@media screen and (min-width:768px){
+	nav ul li{
+		width:150px;
+		float:left;
+		border-bottom:1px #000 solid;
+		padding-bottom:5px;
+		margin-bottom:30px;
+		margin-right:10px;
+	}
+	nav ul li:last-child{
+		margin-right:0;
+	}
+	nav ul li a:link, nav ul li a:visited{
+		color:#000;
+		width:150px;
+		display:block;
+		font-size: 12px;
+		text-align: left;
+	}
 }
 
 /* mainVisual -------------------------*/
@@ -70,8 +128,10 @@ nav ul li a{
 /* container --------------------------*/
 #container{
 	overflow: hidden;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box; /*paddingもwidthに含まれる*/
 }
-
 /* container common */
 #whatsNew h2,
 #about h2,
@@ -84,6 +144,25 @@ nav ul li a{
 .moreLink{
 	margin:10px 0;
 	text-align:right;
+}
+
+@media screen and (min-width:768px){
+	#container{
+		overflow: hidden;
+	}
+	/* container common */
+	#whatsNew h2,
+	#about h2,
+	#todaysMenu h2{
+		border-bottom:1px #000 solid;
+		padding-bottom:5px;
+		margin-bottom:10px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	.moreLink{
+		margin:10px 0;
+		text-align:right;
+	}
 }
 
 /*whatsNew*/
@@ -104,7 +183,25 @@ nav ul li a{
 	border-bottom:none;
 }
 
+@media screen and (min-width:768px){
+	#whatsNew{
+		width:310px;
+		float:left;
+	}
+}
+
 /*about*/
+#about{
+	width:310px;
+	margin:0 10px;
+}
+#about img{
+	width:310px;
+	max-width: 100%;
+
+}
+
+@media screen and (min-width:768px){
 #about{
 	width:310px;
 	float:left;
@@ -116,17 +213,32 @@ nav ul li a{
 
 /*todaysMenu*/
 #todaysMenu{
-	width:310px;
-	float:right;
+	width:100%;
 }
 #menu01{
-	width:150px;
-	float:left;
+	width:100%;
+}
+#menu02{
+	width:100%;
+}
+.thumb{
+	float: left;
 }
 
-#menu02{
-	width:150px;
-	float:right;
+@media screen and (min-width:768px){
+	#todaysMenu{
+		width:310px;
+		float:right;
+	}
+	#menu01{
+		width:150px;
+		float:left;
+	}
+
+	#menu02{
+		width:150px;
+		float:right;
+	}
 }
 
 
@@ -138,8 +250,14 @@ footer{
 	padding-top:20px;
 }
 footer p{
-	text-align:right;
+	text-align:center;;
 	font-size:10px;
 	color:#666666;
 	font-family:Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:768px){
+footer p{
+	text-align:right;
+}
 }

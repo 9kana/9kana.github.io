@@ -14,7 +14,7 @@ $(function(){
     // 成功
     console.log(data);
 
-
+    showContent(data);
 
   }).fail(function(){
     // 失敗
@@ -26,6 +26,13 @@ $(function(){
   // 表示させる関数
   function showContent(data){
 
-    $('#container').append(date);
+    // $('#container').append(date);
+
+    for(var cnt = 0; cnt < data.length; cnt++){
+
+      // くそクラさんの住んでいる場所は川崎市です
+      $('#container li').eq(cnt).text(data[cnt].name);
+    }
   }
+
 });

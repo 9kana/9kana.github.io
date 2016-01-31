@@ -29,8 +29,8 @@ $(function(){
     // Z軸
     var z = evt.alpha;
 
-    $('#demice li').eq(0).text('傾き X' + x);
-    $('#demice li').eq(1).text('傾き Y' + y);
-    $('#demice li').eq(2).text('傾き Z' + z);
+    $('#device li').eq(0).text('傾き X' + x);
+    $('#device li').eq(1).text('傾き Y' + y);
+    $('#device li').eq(2).text('傾き Z' + z);
   }
 });

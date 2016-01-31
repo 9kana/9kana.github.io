@@ -19,7 +19,7 @@ $(function(){
   */
 
   // 傾き ジャイロセンサー
-  window.addEventListener('deviceorientation', roteDevice);
+  window.addEventListener('deviceOrientation', roteDevice);
 
   function roteDevice(evt){
     //X軸

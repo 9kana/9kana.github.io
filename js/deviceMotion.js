@@ -1,5 +1,6 @@
 $(function(){
   // 加速度のイベント
+  /*
   window.addEventListener('devicemotion',shakeDevice);
 
   function shakeDevice(evt){
@@ -15,5 +16,21 @@ $(function(){
       $('#result').text('降ったよ');
     }
   }
+  */
 
+  // 傾き ジャイロセンサー
+  window.addEventListener('deviceorientation', roteDevice);
+
+  function roteDevice(evt){
+    //X軸
+    var x = evt.beta;
+    // Y軸
+    var y = evt.ganma;
+    // Z軸
+    var z = evt.alpha;
+
+    $('#demice li').eq(0).text('傾き X' + x);
+    $('#demice li').eq(1).text('傾き Y' + y);
+    $('#demice li').eq(2).text('傾き Z' + z);
+  }
 });

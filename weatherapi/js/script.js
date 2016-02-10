@@ -21,6 +21,7 @@ $(function(){
 
     }).fail(function(){
       console.log('ajax error!!!');
+      console.log("XMLHttpRequest : " + XMLHttpRequest.status , "textStatus : " + textStatus , "errorThrown : " + errorThrown.message);
     });
 
     // htmlに表示する関数

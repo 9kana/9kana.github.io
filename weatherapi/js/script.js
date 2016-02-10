@@ -16,22 +16,13 @@ $(function(){
       url:url,
       dataType:'json'
     }).done(function(data){
-
-      showWeather(data);
+      console.log(data);
 
     }).fail(function(){
       console.log('ajax error!!!');
-      console.log("XMLHttpRequest : " + XMLHttpRequest.status , "textStatus : " + textStatus , "errorThrown : " + errorThrown.message);
     });
 
     // htmlに表示する関数
-    function showWeather(data){
-      console.log(data);
-
-      // 地域名
-      var areaName = data.name;
-      $('#areaName').text(areaName);
-    }
 
 
   });

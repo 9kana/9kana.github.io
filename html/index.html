@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>P.A.M.P.E.R.S.</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="icon">
+    <img src="img/icon.png" alt="icon">
+  </div>
+
+  <div id="pageTo">
+    <div id="nextP"></div>
+  </div>
+  <div id="pagePre">
+    <div id="prevP"></div>
+  </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#truck">TRUCK</a></li>
+      <li><a href="#">EVENT</a></li>
+    </ul>
+    <div id="sns">
+    <a href="https://twitter.com/PAMPERS_1989?lang=ja"><img src="img/twitter.png" alt="twitter" class="icon01"></a>
+    <a href="https://soundcloud.com/kascade-pampers"><img src="img/soundcloud.png" alt="sc" class="icon02"></a>
+    </div>
+  </nav>
+
+  <div id="wrapper">
+
+    <div id="home">
+      <canvas id="canvasEL"  width="1500" height="800"></canvas>
+      <p>P.A.M.P.E.R.S.</p>
+      <img src="img/key.png" alt="key">
+    </div>
+
+    <div id="about">
+      <h1>ABOUT</h1>
+      <img src="img/mamber.png" alt="member">
+      <div id="text">
+      <p>　茨城県古河市を中心に活動するKASCADE、GUILLOTINE、TBO、JANIZOMAの４MCグループ。<br>2011年に結成しすぐに地元古河@SPIDERにてHIPHOPイベント『BIGWAVE』を開催。そこで初のLIVEを行う。<br>2012年、8曲入りのプロモーションCDを作成し無料で配布したところ、各地のオーガナイザーの目に止まり勢力的にLIVE活動、活動地域の幅を広め始める。<br><br>2011年よりオーガナイズしているイベント『BIGWAVE』は2014年場所を地元古河に移し名前を『CIRCUS』に変え、旬なguest.プレイヤーを呼び毎回100人を超える集客をするなどし地元を盛り上げるため今尚開催中。<br><br>過去にはZEEBRA、RYU-ZO、ANARCHY、DABO、KDUBSHINE等々、BIGアーティストとも客演を務め、又、2014年雑誌『wofin』主催、渋谷Harlemにて開催されたHIPHOPのお祭り『MARUYAMA JAM』にも出演を果たし、期待の若手とコメントを頂き注目される。<br><br>個人でも音源を配信するなど、各地のフリースタイルバトルイベントに参加し始め、<br><br>2014年<br>HIPHOPのNO.1フリースタイルバトルイベント『UMB』のオープニングを飾った茨城予選ではKASCADEが準優勝。<br><br>2015年<br>地元古河にて行われた『BREAKS SEMINAR』ではGUILLOTINEが優勝を飾る。</p>
+      </div>
+    </div>
+
+    <div id="truck">
+      <h1>TRUCK</h1>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide active 01">
+          <img src="img/cd01.png" alt="01" />
+          </div>
+          <div class="slide 02">
+            <img src="img/cd02.png" alt="02">
+          </div>
+          <div class="slide 03">
+            <img src="img/cd03.png" alt="03">
+          </div>
+        </div>
+        <div id="cursol">
+          <span id="prev"></span>
+          <span id="next"></span>
+        </div>
+      </div>
+
+      <div id="sound">
+        <div class="sound list 01">
+        <ul>
+          <li><div class=play id=play01></div><div class=stop id=stop01></div>MY OWN WORST ENEMY</li>
+          <li><div class=play id=play02></div><div class=stop id=stop02></div>Shake a Body</li>
+          <li><div class=play id=play03></div><div class=stop id=stop03></div>Russian Roulette</li>
+        </ul>
+      </div>
+
+        <div class="sound 02">
+        <ul>
+          <li><div class=play id=play04></div><div class=stop id=stop04></div>DIG WORK</li>
+          <li><div class=play id=play05></div><div class=stop id=stop05></div>Replay Road Race</li>
+          <li><div class=play id=play06></div><div class=stop id=stop06></div>狂喜乱舞</li>
+        </ul>
+      </div>
+
+        <div class="sound 03">
+        <ul>
+          <li><div class=play id=play07></div><div class=stop id=stop07></div>2007</li>
+          <li><div class=play id=play08></div><div class=stop id=stop07></div>FREE PAPER</li>
+          <li><div class=play id=play09></div><div class=stop id=stop08></div>ピーターパンシンドローム</li>
+        </ul>
+      </div>
+      </div>
+
+      <ul id="circle">
+        <li class="select"></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div id="more">
+      <a href="https://soundcloud.com/kascade-pampers">MORE</a>
+      </div>
+
+    </div>
+
+    <div id="event">
+      <h1>EVENT</h1>
+      <div id="event">
+        <div class="pic pic-3d">
+                <img src="https://unsplash.it/300/200?image=905" class="pic-image" alt="Pic">
+                <span class="pic-caption open-left">
+		        <h1 class="pic-title">Open Left</h1>
+		        <p>Hi, this is a simple example =D</p>
+		    </span>
+        <div class="data"></div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+<script src="https://code.createjs.com/createjs-2015.11.26.combined.js"></script>
+<script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/action.js">  </script>
+<script src="js/sound.js"></script>
+<script src="js/cd.js"></script>
+<script src="js/count.js"></script>
+</body>
+</html>

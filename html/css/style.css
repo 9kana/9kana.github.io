@@ -257,7 +257,7 @@ h1{
   left: 150px;
   background-image: url(../img/bg.png);
   background-size: auto;
-  min-height: 800px;
+  /*min-height: 800px;*/
   z-index: 50;
 }
 

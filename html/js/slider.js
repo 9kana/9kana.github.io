@@ -1,9 +1,9 @@
 // wrapperをwindowサイズに
-  // function setWinSize(){
-  // var winWidth = $(window).width();
-  // var winHeight = $(window).height();
-  // wrapper.css('width',winWidth).css('height',winHeight);
-  // }
+  function setWinSize(){
+  var winWidth = $(window).width();
+  var winHeight = $(window).height();
+  wrapper.css('width',winWidth).css('height',winHeight);
+  }
 
 $('nav li a').on('click', function(evt) {
 // イベントの停止

@@ -46,7 +46,7 @@ $('#nextP').on('click',function(){
 });
 
 $('#prevP').on('click',function(){
-  $('html, body').animate({scrollLeft: '-=100%'}, 800,'easeOutBounce');
+  $('html, body').animate({scrollLeft: '-='+targetWidth}, 800,'easeOutBounce');
 });
 
 

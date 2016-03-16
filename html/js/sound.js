@@ -14,7 +14,7 @@ var manifest = [
   {id:"sound06",src:"./sound/狂喜乱舞.mp3"},
   {id:"sound07",src:"./sound/2007.mp3"},
   {id:"sound08",src:"./sound/FREE PAPER.mp3"},
-  {id:"sound09",src:"./sound/ピーターパンシンドローム.mp3"},
+  {id:"sound09",src:"./sound/ピーターパンシンドローム.mp3"}
 
 ];
 

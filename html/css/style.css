@@ -239,7 +239,7 @@ h1{
 }
 
 #home{
-  width: 100%;
+  width: 1500px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -256,8 +256,8 @@ h1{
   top: 0;
   left: 150px;
   background-image: url(../img/bg.png);
-  background-size: auto;
-  /*min-height: 800px;*/
+  background-size: 100%;
+  min-height: 1200px;
   z-index: 50;
 }
 
@@ -286,11 +286,11 @@ h1{
 }
 
 #about{
-  width: 100%;
+  width: 1500px;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 1500px;
   background-color: #ff6200;
   min-height: 800px;
   z-index: 60;
@@ -328,11 +328,11 @@ h1{
 }
 
 #truck{
-  width: 100%;
+  width: 1500px;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 200%;
+  left: 3000px;
   background-color: #f64652;
   min-height: 800px;
   z-index: 70;
@@ -576,11 +576,11 @@ h1{
 
 
 #event{
-  width: 100%;
+  width: 1500px;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 300%;
+  left: 4500px;
   background-color: #005eec;
   min-height: 800px;
   z-index: 80;

@@ -356,7 +356,7 @@ h1{
 .slides{
   position: absolute;
   top: 20px;
-  left: 40%;
+  left: 41.2%;
   margin-top: 18px;
 }
 
@@ -394,7 +394,7 @@ h1{
   width: 800px;
   height: 100px;
   top: 47%;
-  left: 27%;
+  left: 27.5%;
   /*margin-top: 240px;
   margin-left: 420px;*/
   z-index: 150;
@@ -457,7 +457,7 @@ h1{
   height: 110px;
   position: absolute;
   top: 40%;
-  left: 42.5%;
+  left: 43%;
   display: none;
 }
 
@@ -520,7 +520,7 @@ h1{
   width: 150px;
   height: 45px;
   position: absolute;
-  left: 49%;
+  left: 49.3%;
   top: 54%;
   background: #f64652;
   z-index: 120;
@@ -555,7 +555,7 @@ h1{
 #circle{
   width: 500px;
   top: 37%;
-  left: 51%;
+  left: 53.2%;
   position: absolute;
   overflow: hidden;
   margin-left: 17px;

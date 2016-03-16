@@ -15,7 +15,6 @@ var manifest = [
   {id:"sound07",src:"./sound/2007.mp3"},
   {id:"sound08",src:"./sound/FREE PAPER.mp3"},
   {id:"sound09",src:"./sound/ピーターパンシンドローム.mp3"}
-
 ];
 
 queue.loadManifest(manifest);

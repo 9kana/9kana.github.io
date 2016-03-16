@@ -27,7 +27,7 @@ function init(){
     loader.loadManifest(manifest);
 
     loader.addEventListener('progress',function(evt){
-      console.log(evt.progress);
+      // console.log(evt.progress);
 
     });
 

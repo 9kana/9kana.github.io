@@ -233,8 +233,8 @@ h1{
   text-align: center;
   font-family: 'myfont';
   font-size:70px;
-  top: 8%;
-  left: 45%;
+  top: 5%;
+  left: 46%;
   z-index: 100;
 }
 
@@ -304,7 +304,7 @@ h1{
   width: 450px;
   height: 250px;
   position: absolute;
-  top: 8%;
+  top: 5%;
   left: 39%;
   z-index: 120;
 }
@@ -313,8 +313,8 @@ h1{
   width: 1010px;
   height: 480px;
   position: absolute;
-  top: 26%;
-  left: 19%;
+  top: 17%;
+  left: 20%;
   border: 6px double #000;
   border-radius: 10px;
 }
@@ -393,8 +393,10 @@ h1{
   position: relative;
   width: 800px;
   height: 100px;
-  margin-top: 240px;
-  margin-left: 420px;
+  top: 47%;
+  left: 27%;
+  /*margin-top: 240px;
+  margin-left: 420px;*/
   z-index: 150;
 }
 
@@ -451,11 +453,11 @@ h1{
 }
 
 .sound{
-  width: 340px;
+  width: 362px;
   height: 110px;
   position: absolute;
-  top: 61%;
-  left: 43%;
+  top: 40%;
+  left: 42.5%;
   display: none;
 }
 
@@ -521,8 +523,8 @@ h1{
   width: 150px;
   height: 45px;
   position: absolute;
-  left: 48%;
-  top: 82%;
+  left: 49%;
+  top: 54%;
   background: #f64652;
   z-index: 120;
   margin-left: 5px;
@@ -555,8 +557,8 @@ h1{
 
 #circle{
   width: 500px;
-  top: 56%;
-  left: 50%;
+  top: 37%;
+  left: 51%;
   position: absolute;
   overflow: hidden;
   margin-left: 17px;

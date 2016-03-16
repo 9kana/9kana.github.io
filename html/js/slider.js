@@ -39,11 +39,11 @@ function(){
 );
 
 $('#nextP').on('click',function(){
-  $('html, body').animate({scrollLeft: '+=1500px'}, 800,'easeOutBounce');
+  $('html, body').animate({scrollLeft: '+=100%'}, 800,'easeOutBounce');
 });
 
 $('#prevP').on('click',function(){
-  $('html, body').animate({scrollLeft: '-=1500px'}, 800,'easeOutBounce');
+  $('html, body').animate({scrollLeft: '-=100%'}, 800,'easeOutBounce');
 });
 
 

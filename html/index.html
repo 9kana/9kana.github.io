@@ -9,9 +9,6 @@
 </head>
 <body>
 
-  <div id="icon">
-    <img src="img/icon.png" alt="icon">
-  </div>
 
   <div id="pageTo">
     <div id="nextP"></div>
@@ -19,6 +16,8 @@
   <div id="pagePre">
     <div id="prevP"></div>
   </div>
+  <div id="icon">
+    <img src="img/icon.png" alt="icon">
   </div>
 
   <nav>
@@ -26,23 +25,23 @@
       <li><a href="#home">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#truck">TRUCK</a></li>
-      <li><a href="#">EVENT</a></li>
+      <li><a href="#event">EVENT</a></li>
     </ul>
-    <div id="sns">
+    <h1>P.A.M.P.E.R.S.</h1>
+    <!-- <div id="sns">
     <a href="https://twitter.com/PAMPERS_1989?lang=ja"><img src="img/twitter.png" alt="twitter" class="icon01"></a>
     <a href="https://soundcloud.com/kascade-pampers"><img src="img/soundcloud.png" alt="sc" class="icon02"></a>
-    </div>
+    </div> -->
   </nav>
-
+  <div id="background"></div>
   <div id="wrapper">
 
-    <div id="home">
-      <canvas id="canvasEL"  width="1500" height="800"></canvas>
-      <p>P.A.M.P.E.R.S.</p>
+    <div class="content" id="home">
+      <canvas id="canvasEL" width="1282" height="500"></canvas>
       <img src="img/key.png" alt="key">
     </div>
 
-    <div id="about">
+    <div class="content" id="about">
       <h1>ABOUT</h1>
       <img src="img/mamber.png" alt="member">
       <div id="text">
@@ -50,7 +49,7 @@
       </div>
     </div>
 
-    <div id="truck">
+    <div class="content" id="truck">
       <h1>TRUCK</h1>
       <div class="slider">
         <div class="slides">
@@ -108,17 +107,81 @@
 
     </div>
 
-    <div id="event">
+    <div class="content" id="event">
       <h1>EVENT</h1>
-      <div id="event">
-        <div class="pic pic-3d">
-                <img src="https://unsplash.it/300/200?image=905" class="pic-image" alt="Pic">
-                <span class="pic-caption open-left">
-		        <h1 class="pic-title">Open Left</h1>
-		        <p>Hi, this is a simple example =D</p>
-		    </span>
-        <div class="data"></div>
+      <div id="events">
+
+        <div class="eve" id="0">
+          <img src="img/eve01.jpg" alt="01" id="img01">
+          <div class="tex">
+            <p>2016<br><font color="#FFF">01/30</font><br>SAT</p>
+          </div>
+        </div>
+
+        <div class="eve" id="1">
+          <img src="img/eve02.jpg" alt="02" id="img02">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">12/26</font><br>SAT</p>
+          </div>
+        </div>
+
+        <div class="eve" id="2">
+          <img src="img/eve03.jpg" alt="03" id="img03">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">12/30</font><br>SAN</p>
+          </div>
+        </div>
+
+        <div class="eve" id="3">
+          <img src="img/eve04.jpg" alt="04" id="img04">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">11/21</font><br>SAN</p>
+          </div>
+        </div>
+
+        <div class="eve" id="4">
+          <img src="img/eve05.jpg" alt="05" id="img05">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">10/24</font><br>SAT</p>
+          </div>
+        </div>
+
+        <div class="eve" id="5">
+          <img src="img/eve06.jpg" alt="06" id="img05">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">10/24</font><br>SAT</p>
+          </div>
+        </div>
+
+        <div class="eve" id="6">
+          <img src="img/eve07.jpg" alt="07" id="img05">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">10/24</font><br>SAT</p>
+          </div>
+        </div>
+
+        <div class="eve" id="7">
+          <img src="img/eve08.jpg" alt="08" id="img05">
+          <div class="tex">
+            <p>2015<br><font color="#FFF">10/24</font><br>SAT</p>
+          </div>
+        </div>
       </div>
+
+    <div id="modal-overlay">
+      <ul id="modal-content">
+        <li><img src="img/eve01full.jpg" alt="" /></li>
+        <li><img src="img/eve02full.jpg" alt=""></li>
+        <li><img src="img/eve03full.jpg" alt=""></li>
+        <li><img src="img/eve04full.jpg" alt=""></li>
+        <li><img src="img/eve05full.jpg" alt=""></li>
+        <li><img src="img/eve06full.jpg" alt=""></li>
+        <li><img src="img/eve07full.jpg" alt=""></li>
+        <li><img src="img/eve08full.jpg" alt=""></li>
+      </ul>
+      <div id="close"><div id="closebutten"></div></div>
+    </div>
+
     </div>
 
   </div>
@@ -128,11 +191,11 @@
 <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
 <script src="https://code.createjs.com/createjs-2015.11.26.combined.js"></script>
 <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
-<script src="js/slider.js"></script>
+<script src="js/slider2.js"></script>
 <script src="js/action.js">  </script>
 <script src="js/sound.js"></script>
 <script src="js/cd.js"></script>
 <script src="js/count.js"></script>
-<script src="js/html5shiv.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

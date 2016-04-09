@@ -1,17 +1,17 @@
 var $slider = $(".slider");
 
-        function calculateHeight(){
-            var height = $(".slide.active").outerHeight();
-            $slider.height(height);
-        }
+        // function calculateHeight(){
+        //     var height = $(".slide.active").outerHeight();
+        //     $slider.height(height);
+        // }
         function resetSlides(){
-            $(".slide.inactive").removeClass("inactiinactiveBottom").removeClass("inactiveTop");
+            $(".slide.inactive").removeClass("inactiveBottom").removeClass("inactiveTop");
         }
 
         function gotoSlide($activeSlide, $slide, className){
              $activeSlide.removeClass("active").addClass("inactive "+className);
              $slide.removeClass("inactive").addClass("active");
-             calculateHeight();
+            //  calculateHeight();
              setTimeout(resetSlides, 200);
         }
 
@@ -27,4 +27,4 @@ var $slider = $(".slider");
 
                  gotoSlide($activeSlide, $prevSlide, "inactiveRight");
         });
-        calculateHeight();
+        // calculateHeight();

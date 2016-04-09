@@ -46,8 +46,8 @@ function init(){
         // ステッカーの位置設定
         var stickerT = new createjs.Bitmap(manifest[0].src);
         stage.addChild(stickerT);
-        stickerT.scaleX = 1.2;
-        stickerT.scaleY = 1.2;
+        stickerT.scaleX = 0.5;
+        stickerT.scaleY = 0.5;
         stickerT.x = 300;
         stickerT.y = 50;
         stickerT.alpha = 0;
